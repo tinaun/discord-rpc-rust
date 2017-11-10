@@ -1,8 +1,14 @@
 [package]
 name = "discord-rpc"
 version = "0.1.0"
-authors = ["Adam Spofford <pieflavor.mc@gmail.com>"]
-description = "Placeholder"
-license = "MIT"
+authors = ["tinaun <tinagma@gmail.com>"]
 
 [dependencies]
+libc = "0.2"
+lazy_static = "0.2"
+
+[dependencies.discord-rpc-sys]
+path = "discord-rpc-sys"
+
+[dev-dependencies]
+rand = "0.3"

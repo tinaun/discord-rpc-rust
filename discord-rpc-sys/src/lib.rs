@@ -1,20 +1,14 @@
-extern crate discord_rpc_sys as sys;
 extern crate libc;
 
-#[macro_use]
-extern crate lazy_static;
-
-pub mod events;
-
 #[cfg(all(windows, target_pointer_width = "64"))]
-mod rpc;
+mod imp;
 
 #[cfg(not(all(windows, target_pointer_width = "64")))]
-mod rpc {
+mod imp {
     //TODO: implement this
 }
 
-pub use rpc::*;
+pub use imp::*;
 
 #[cfg(test)]
 mod tests {
