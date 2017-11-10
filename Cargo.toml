@@ -1,7 +1,8 @@
-[package]
 name = "discord-rpc"
 version = "0.1.0"
-authors = ["tinaun <tinagma@gmail.com>"]
+authors = ["Adam Spofford <pieflavor.mc@gmail.com>"]
+description = "the discord rich presence api"
+license = "MIT"
 
 [dependencies]
 libc = "0.2"
@@ -9,6 +10,3 @@ lazy_static = "0.2"
 
 [dependencies.discord-rpc-sys]
 path = "discord-rpc-sys"
-
-[dev-dependencies]
-rand = "0.3"
