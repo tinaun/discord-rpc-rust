@@ -2,5 +2,7 @@
 name = "discord-rpc"
 version = "0.1.0"
 authors = ["Adam Spofford <pieflavor.mc@gmail.com>"]
+description = "Placeholder"
+license = "MIT"
 
 [dependencies]
