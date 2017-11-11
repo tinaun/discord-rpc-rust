@@ -1,4 +1,4 @@
-/// event handling
+//! event handling
 
 #[derive(Debug, Clone)]
 pub struct JoinRequest {
@@ -8,6 +8,7 @@ pub struct JoinRequest {
 }
 
 #[derive(Debug, Copy, Clone, PartialEq, Eq)]
+/// a reply to a join request
 pub enum Reply {
     No,
     Yes,
